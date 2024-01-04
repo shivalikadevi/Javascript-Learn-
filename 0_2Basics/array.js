@@ -22,7 +22,37 @@ console.log("A",myArr)
 const myn1= myArr.slice(1,3)//(1,3) both indices 3 not included 1 ,2 included
 console.log(myn1)
 console.log("B",myArr)
-const myAr2= myArr.splice(1,3)
+const myAr2= myArr.splice(1,3)//1,3 both indices included  but it also remove that part from original arraay
+
 console.log(myAr2)
 console.log(myAr2)
 console.log(myArr)
+//difference between slice and splice
+//1)Slice-it will print array and (1,3) donot include index 3
+//2)Splice-it will print the array include both indices and remove that part from the original array 
+console.log("*************--------------**************************")
+const marvel_heros=['thor',"ironman","spiderman"]
+const dcHeros=["superman","flash","batman"]
+marvel_heros.push(dcHeros)//take array as data 
+console.log(marvel_heros)//it will push the dc array in this array not join that array
+marvel_heros.pop();
+//now concat method-it will give new array with both array properties
+let newHeros =marvel_heros.concat(dcHeros);
+console.log(newHeros)//all the heros get together
+
+//spread operator (...)(drop kanch glass)
+const all_new_heros=[...marvel_heros,...dcHeros]
+console.log(all_new_heros)//all elements get outside
+
+const anotherArray=[1,2,3,4,[4,56,7],3,[5,6,[3,1,2,]]]
+const real_another_array=anotherArray.flat(Infinity)//Infinty tell us depth we give 1 2 also
+console.log(real_another_array)
+
+console.log(Array.isArray("hites"))
+console.log(Array.from("hites"))//convert the string to array
+console.log(Array.from({name:"hitesh"}))//interesting case return empty array
+
+let score1=100
+let score2=200
+let score3=2
+console.log(Array.of(score1,score2,score3))//it will create an array
