@@ -45,6 +45,6 @@ var fxn=function(){console.log("hello world")}();
  let obj1={"name":"shivalika","age":21}
  let obj2=obj1;
  obj2.name="shiva"
- console.log(obj1)
+ console.log(obj1)//get original cpy thats why it got changed
  console.log(obj2)
  console.log(obj1==obj2)
