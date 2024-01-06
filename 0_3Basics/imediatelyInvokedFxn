@@ -1,0 +1,21 @@
+//Immediately Invoked Function Expression
+
+(function chai(){
+    console.log("Db conected")
+})();
+
+//wrap the function
+//we use iife becoz of pollution due to global space to remove that pollution varibale we use iife
+//end iife with semicolon 
+//arrow iife
+//normal iife
+(()=>{
+    console.log("DB connected")
+})();
+//parameter arrow iife
+((name)=>{
+console.log((`Db connected`))
+})('hitesh');
+
+//name iife
+(function chai(){console.log("name iife")})();

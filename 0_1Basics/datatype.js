@@ -2,13 +2,16 @@
 //alert(3+3);//we are using node.js not browser so we cannot use it
 //types of datatypes in javascript
 //number = range in between 2 to power 33
-//bigint 
-//string =""
-//boolean =true/false
-//null =standalone value
-//undefined
-//symbol=unique
-//object
+//bigint -type (undefined)
+//string =""  (string)
+//boolean =true/false (boolean)
+//null =standalone value   (object)
+//undefined     (undefined)
+//symbol=unique      (symbol)
+//object          (object)
+const S = Symbol("heillo")
+console.log(typeof S);
+console.log(typeof undefined)
 const obj={name:"John",age:30};
 console.log(typeof(obj))
 /*type of datatype on basis of how they are stored in memory
