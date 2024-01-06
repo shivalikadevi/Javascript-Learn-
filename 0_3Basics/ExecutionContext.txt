@@ -1,0 +1,31 @@
+There are 3 type of execution context
+1) Global execution context
+2) Function execution context
+3) Eval execution context
+
+There are 2 phases in which javascript code runs
+1) Memory creation phases -only memory allocated is There
+2)Execution Phase
+
+/*
+let num1=10
+let num2=5
+function addtwo(val1,val2){
+
+let total=val1+val2;
+return total}*/
+Steps
+1) Global execution -this
+2) Memory phase - 
+val1=undefined,
+val2=undefined 
+addNum =Fxn Definition
+result1=undefined
+result2=undefined
+Ist cycle complete
+3) Execution Phase
+val1=10
+val2=5
+addNum ->make its own execution context
+          addNum exectuion context
+               Both memory phase and exection phase
