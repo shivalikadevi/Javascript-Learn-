@@ -37,7 +37,7 @@ marvel_heros.push(dcHeros)//take array as data
 console.log(marvel_heros)//it will push the dc array in this array not join that array
 marvel_heros.pop();
 //now concat method-it will give new array with both array properties
-let newHeros =marvel_heros.concat(dcHeros);
+let newHeros = marvel_heros.concat(dcHeros);
 console.log(newHeros)//all the heros get together
 
 //spread operator (...)(drop kanch glass)

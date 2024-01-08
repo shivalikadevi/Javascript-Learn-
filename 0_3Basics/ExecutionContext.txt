@@ -29,3 +29,10 @@ val2=5
 addNum ->make its own execution context
           addNum exectuion context
                Both memory phase and exection phase
+               Memory -val1=undefined,val2=undefined,total=undefined
+               Execution phase
+               val1=10,val2=5,total =15
+
+            Delete execution phase
+
+            

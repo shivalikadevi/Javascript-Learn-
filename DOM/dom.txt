@@ -1,0 +1,54 @@
+to get the elemet byid or class we can use
+document.getElementById
+document.getElementByClassName
+doument.getElementById.getAttributes()
+document.getElementById.setAttributes("class","heading","testing")//this always overwrite previous class
+
+//now how to extract text
+
+element.innerHTML,element,innerText,element.textContent
+
+//innerText vs textContent
+innerText-only give us what we want to display
+textContent-give us whole text for example i add span there it is also visible in that.
+//innerHTML- give the whole value also support html tag
+//document.querySelector(h1) -give us the first h1 in page
+#idname -give the text with that idname
+.className-give the class className
+document.querySelector('input[typr="password"])
+
+//querySelectorAll -give all the selectors
+nodelist is not an array 
+querySelectorAll return nodelist 
+heading[1]
+
+document.getElementByClassName return html element
+html->nodelist
+Array.from(htmlcollection)
+
+
+//id or className
+id.childNodes -calculate everthing as line infact cmt br to
+id.children-list of children
+id.children[0]-ist children
+id.parenrElement-return parentElement
+
+id.children[0].nextSibling
+
+//how to add div in html using the script
+
+<script>
+const div =document.createElement('div)
+console.log(div)
+div.className="main"
+div.id=Math.random()*10+1
+div.setAttribute("title","generated title")
+div.style.backgroundColor='green"
+div.style.padding="12px"
+//div.innerText="shivalika"
+const addtext=document.createTextNode("shivakika)
+div.appendChild(addtext)
+document.body.appendChild(div)
+
+</script>
+

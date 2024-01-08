@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom learning</title>
+</head>
+<body class =bg-black'>
+    <div class="test bg-black">
+        <h1 class="heading" id="tes">DOm with chai aur code</h1>
+        <p>hello</p>
+    </div>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+function addLang(langName){
+    let li= document.createElement('li')
+    li.innerText=langName
+document.querySelector('.language').appendChild(li)
+}
+addLang("python")
+addLang("C++")
+optimisedAddLang("golang")
+function optimisedAddLang(lang){
+    const li=document.createElement('li');
+    li.appendChild(document.createTextNode(lang));
+    document.querySelector('.language').appendChild(li);}
+
+    function editLang(lang){
+        const sl=document.querySelector("li:nth-child(2)")
+       // sl.innerHTML=lang
+        const newLi=document.createElement('li')
+        newLi.textContent=lang
+        sl.replaceWith(newLi)
+    }
+    editLang("Node.js")
+    function removelang(){
+        const lastLang=document.querySelector('li:last-child')
+        lastLang.remove()
+    }
+removelang()
+addLang('manu')
+</script>
+</html>
