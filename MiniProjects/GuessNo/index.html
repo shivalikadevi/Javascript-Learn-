@@ -11,9 +11,9 @@
         <p>Try and guess a random number between 1 and 100</p>
         <p>You have 10 attempts to guess the right number</p>
     <br>
-    <form class="form">
-        <label for="guessField" id="guess">Guess a number</label>
-            <input type="type" placeholder="Enter the number " id="guessNo" class="guessNumber"/>
+    <form class="USERDATA">
+        <label for="input" >Guess a number</label>
+            <input type="text" placeholder="Enter the number " id="userInput" class="guessNumber"/>
            <input type="submit"id="submit"value="submit" class="submit">
         
         
@@ -21,9 +21,10 @@
 
 
         <div class="result">
-            <p>Previous Guess<span class="guesses"></span></p>
-            <p>Guess Remaining:<span class="lastResult">10</span></span></p>
-            <p class="lowOrHi"></p>
+            <p>Previous Guess<span class="guesses" id="guesses"></span></p>
+            <p id="lastGuess">LastGuess</p>
+            <p>Guess Remaining:<span id="try" class="lastResult">10</span></span></p>
+            <!-- <p  id="try"class="lowOrHi"></p> -->
         </div>
     </div>
     
